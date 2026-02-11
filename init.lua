@@ -27,6 +27,11 @@ vim.keymap.set('n', '<space>d', vim.diagnostic.open_float)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
 
+vim.keymap.set('n', '<Leader>h', '<C-w>h')
+vim.keymap.set('n', '<Leader>j', '<C-w>j')
+vim.keymap.set('n', '<Leader>k', '<C-w>k')
+vim.keymap.set('n', '<Leader>l', '<C-w>l')
+
 -- Plugin Manager lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
